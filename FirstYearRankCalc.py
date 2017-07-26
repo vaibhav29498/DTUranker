@@ -26,7 +26,7 @@ for elem in lst:
         j = r
     elem.append(j)
 for line in marksf1:
-    rollno = re.findall('2016/[AB][0-9]+/[0-9]+', line)
+    rollno = re.findall('20[0-9][0-9]/[AB][0-9]+/[0-9]+', line)
     if len(rollno) == 1:
         found = 0
         for elem in lst:
