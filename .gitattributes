@@ -1,3 +1,2 @@
-$ cat .gitattributes
 special-vendored-path
 FirstYearRankList.html linguist-vendored=false
