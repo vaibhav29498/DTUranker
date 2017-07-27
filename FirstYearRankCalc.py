@@ -10,10 +10,10 @@ f2 = open("sem2.txt", 'w')
 f3 = open("avg.txt", 'w')
 lst = []
 for line in marksf2:
-    name = re.findall('^[0-9]+ (.+)2016/[AB][0-9]+/[0-9]+', line)
+    name = re.findall('^[0-9]+ (.+)20[0-9][0-9]/[AB][0-9]+/[0-9]+', line)
     if len(name) == 1:
         cgpa2 = re.findall('[0-9]+\.[0-9][0-9]', line)
-        rollno = re.findall('2016/[AB][0-9]+/[0-9]+', line)
+        rollno = re.findall('20[0-9][0-9]/[AB][0-9]+/[0-9]+', line)
         lst.append([name[0], rollno[0], float(cgpa2[0])])
 lst.sort(reverse=True, key=lambda argm: argm[2])
 j = 1
